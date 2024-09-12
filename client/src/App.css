@@ -1,0 +1,17 @@
+.scrollbar::-webkit-scrollbar{
+    width:10px;
+}
+.scrollbar::-webkit-scrollbar-track{
+    @apply bg-slate-100
+}
+.scrollbar::-webkit-scrollbar-thumb{
+    @apply bg-slate-200 rounded-full
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+     /* Adjust this value to fit your needs */
+  }
