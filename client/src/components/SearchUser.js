@@ -26,6 +26,7 @@ function SearchUser({onClose}) {
   };
   useEffect(() => {
     handleSearchUser();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search]);
   console.log("search", searchUser);
   return (
