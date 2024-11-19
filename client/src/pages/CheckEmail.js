@@ -45,7 +45,7 @@ function CheckEmail() {
           state:response?.data
         }) 
       }
-      console.log(response.data.data)
+      //console.log(response.data.data)
     } catch (error) {
       toast.error(error.response.data.message, {
          position: "bottom-center",
