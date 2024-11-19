@@ -38,6 +38,8 @@ useEffect(()=>{
     currentMessage.current.scrollIntoView({behavior:'smooth',block:'end'})
   }
 },[allMessage])
+  console.log(allMessage);
+  console.log(message);
   const params = useParams();
   const socketConnection = useSelector(
     (state) => state?.user?.socketConnection
