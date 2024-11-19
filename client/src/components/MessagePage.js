@@ -82,7 +82,7 @@ useEffect(()=>{
     });
   };
   const handleOnChange=(e)=>{
-    const {name , value} = e.target
+    const { value} = e.target
     setMessage((prev)=>{
       return{
         ...prev,text:value
