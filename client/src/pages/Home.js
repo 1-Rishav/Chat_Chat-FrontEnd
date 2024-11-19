@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
-import { logOut, setOnlineUser, setSocketConnection, setUser, setsocketConnection } from "../redux/userSlice";
+import { logOut, setOnlineUser, setSocketConnection, setUser } from "../redux/userSlice";
 import Sidebar from "../components/Sidebar";
 import logo from "../assets/Logo.png"
 import io from 'socket.io-client';
@@ -33,6 +33,7 @@ function Home() {
   };
   useEffect(() => {
     fetchUserDetails();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); 
   /* Socket connection */
   useEffect(() => {
@@ -49,6 +50,7 @@ function Home() {
     return ()=>{
       socketConnection.disconnect();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
  const basePath = location.pathname === '/'
   return (
