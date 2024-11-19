@@ -28,7 +28,7 @@ function SearchUser({onClose}) {
     handleSearchUser();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search]);
-  console.log("search", searchUser);
+  //console.log("search", searchUser);
   return (
     <div className="fixed top-0 bottom-0 left-0 right-0 bg-slate-700 bg-opacity-40 p-2 z-10">
       <div className="w-full max-w-lg mx-auto mt-10">
