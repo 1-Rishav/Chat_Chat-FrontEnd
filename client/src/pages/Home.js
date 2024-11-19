@@ -8,6 +8,7 @@ import logo from "../assets/Logo.png"
 import io from 'socket.io-client';
 
 function Home() {
+  // eslint-disable-next-line no-unused-vars
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
