@@ -1,6 +1,5 @@
 import React from "react";
 import { FaRegCircleUser } from "react-icons/fa6";
-import { useSelector } from "react-redux";
 function Avatar({ userId, name, imageUrl, width, height }) {
 /*   const onlineUser = useSelector((state) => state?.user?.onlineUser);
  */  let avatarName = "";
