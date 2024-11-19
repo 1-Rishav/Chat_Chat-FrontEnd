@@ -95,11 +95,11 @@ useEffect(()=>{
       if(socketConnection){
         socketConnection.emit('new message',{
           sender:user?._id,
-          receiver : params.userId,
-          text:message.text,
-          imageUrl:message.imageUrl,
-          videoUrl:message.videoUrl,
-          msgByUserId: user._id
+          receiver : params?.userId,
+          text:message?.text,
+          imageUrl:message?.imageUrl,
+          videoUrl:message?.videoUrl,
+          msgByUserId: user?._id
         })
         setMessage({
           text: "",
